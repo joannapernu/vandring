@@ -1,0 +1,104 @@
+
+/* Bakgrundsfärg */
+body {
+  background-color: rgb(12, 23, 35)
+}
+/* Text i headern */
+h1 {
+  font-size: 40px;font-family: "helvetica";
+  text-align: center;
+  color: rgb(45, 47, 50);
+}
+/* meny länkboxar */
+.textlank {
+  /*flexbox Länkar på sidan*/
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-right: 2px;
+  flex-flow: row wrap;
+  background-color: rgb(12, 23, 35);
+}
+
+a:link, a:visited {
+  background-color: rgb(21, 32, 43);
+  color: white;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+}
+a:hover {
+  color: blue;
+}
+p {
+  color: white;
+  font-family: monospace;
+}
+/*LINJER PÅ SIDAN*/
+hr {
+  width: 100%;
+}
+
+/* Bild i headern*/
+.headline {
+  background-image: url("https://www.sca.com/imagevault/publishedmedia/hz40z4eapxovz7hsfb5q/Skog_med_myr.jpgs");
+  padding: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ /* bildstorlek */
+
+
+/* FÖRSTA SIDAN INNEHÅLL*/
+.skogbild img {
+  display: flex;
+  justify-content: right;
+  width: 200px;
+  height: auto;
+  padding: 3px;
+}
+.forstasidan {
+  display: flex;
+  align-text: auto;
+}
+  /*PACKNINGSLIST-SIDA*/
+h4 {
+    color: white;
+  }
+.packval {
+  list-style-type: none;
+  display: flex;
+  margin-right: 2px;
+  background-color: none;
+  flex-flow: row wrap;
+}
+ul {
+  list-style-type: none;
+}
+/* RESPONSIV MOBIL */
+@media (max-width: 600px) {
+
+  /* Text i headern*/
+  h1 {
+    color: rgb(4, 15, 15);
+    font-size: 1em;
+  }
+  p {
+    font-size: auto;
+  }
+  p img{
+    width: 600px;
+  }
+
+  }
+
+/* RESPONSIV PLATTA */
+  @media (min-width: 600px) and (max-width: 900px) {
+    h1 {
+      color: rgb(10, 23, 23);
+    }
+
+  }
